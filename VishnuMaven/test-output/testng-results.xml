@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="137435" started-at="2020-01-29T15:54:45 GMT" finished-at="2020-01-29T15:57:03 GMT">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="137435" started-at="2020-01-29T15:54:45 GMT" finished-at="2020-01-29T15:57:03 GMT">
+      <class name="com.TestPages.CreateWishList">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.TestPages.CreateWishList@3dfc5fb8]" name="beforeClass" is-config="true" duration-ms="22521" started-at="2020-01-29T15:54:45 GMT" finished-at="2020-01-29T15:55:08 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.TestPages.CreateWishList@3dfc5fb8]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-01-29T15:55:08 GMT" finished-at="2020-01-29T15:55:08 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="FirstTest()[pri:1, instance:com.TestPages.CreateWishList@3dfc5fb8]" name="FirstTest" duration-ms="10417" started-at="2020-01-29T15:55:08 GMT" finished-at="2020-01-29T15:55:18 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FirstTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.TestPages.CreateWishList@3dfc5fb8]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-01-29T15:55:18 GMT" finished-at="2020-01-29T15:55:18 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.TestPages.CreateWishList@3dfc5fb8]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-01-29T15:55:18 GMT" finished-at="2020-01-29T15:55:18 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="SecondTest()[pri:0, instance:com.TestPages.CreateWishList@3dfc5fb8]" name="SecondTest" duration-ms="4153" started-at="2020-01-29T15:55:18 GMT" depends-on-methods="com.TestPages.CreateWishList.FirstTest" finished-at="2020-01-29T15:55:23 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SecondTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.TestPages.CreateWishList@3dfc5fb8]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-01-29T15:55:23 GMT" finished-at="2020-01-29T15:55:23 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.TestPages.CreateWishList@3dfc5fb8]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-01-29T15:55:23 GMT" finished-at="2020-01-29T15:55:23 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="ThirdTest()[pri:0, instance:com.TestPages.CreateWishList@3dfc5fb8]" name="ThirdTest" duration-ms="4502" started-at="2020-01-29T15:55:23 GMT" depends-on-methods="com.TestPages.CreateWishList.SecondTest" finished-at="2020-01-29T15:55:27 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ThirdTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.TestPages.CreateWishList@3dfc5fb8]" name="afterMethod" is-config="true" duration-ms="1" started-at="2020-01-29T15:55:27 GMT" finished-at="2020-01-29T15:55:27 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="FourthTest()[pri:0, instance:com.TestPages.CreateWishList@3dfc5fb8]" name="FourthTest" duration-ms="25727" started-at="2020-01-29T15:55:27 GMT" depends-on-methods="com.TestPages.CreateWishList.ThirdTest" finished-at="2020-01-29T15:55:53 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FourthTest -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.TestPages.CreateWishList@3dfc5fb8]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-01-29T15:55:27 GMT" finished-at="2020-01-29T15:55:27 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.TestPages.CreateWishList@3dfc5fb8]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-01-29T15:55:53 GMT" finished-at="2020-01-29T15:55:53 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.TestPages.CreateWishList@3dfc5fb8]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2020-01-29T15:55:53 GMT" finished-at="2020-01-29T15:55:53 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="FifthTest()[pri:0, instance:com.TestPages.CreateWishList@3dfc5fb8]" name="FifthTest" duration-ms="21491" started-at="2020-01-29T15:55:53 GMT" depends-on-methods="com.TestPages.CreateWishList.FourthTest" finished-at="2020-01-29T15:56:14 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FifthTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.TestPages.CreateWishList@3dfc5fb8]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-01-29T15:56:14 GMT" finished-at="2020-01-29T15:56:14 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.TestPages.CreateWishList@3dfc5fb8]" name="afterClass" is-config="true" duration-ms="48280" started-at="2020-01-29T15:56:14 GMT" finished-at="2020-01-29T15:57:03 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.TestPages.CreateWishList -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
