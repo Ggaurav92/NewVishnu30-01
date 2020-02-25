@@ -1,31 +1,25 @@
 package com.TestPages;
 
-import org.testng.annotations.Test;
-
-import com.pagesobject.WishListPage;
-
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.BeforeClass;
-
-import java.util.Iterator;
-import java.util.List;
-import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import javax.swing.JOptionPane;
 
-import org.openqa.selenium.Alert;
+import org.apache.commons.mail.DefaultAuthenticator;
+import org.apache.commons.mail.Email;
+import org.apache.commons.mail.EmailException;
+import org.apache.commons.mail.SimpleEmail;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.pagesobject.WishListPage;
 
 public class CreateWishList
 {
@@ -39,8 +33,21 @@ public class CreateWishList
 	String explistname5 = "Apple iPhone 11 Pro Max (256GB) - Gold";
 	
 	@BeforeClass
-	public void beforeClass()
+	public void beforeClass() throws EmailException
 	{
+		
+		Email email = new SimpleEmail();
+		email.setHostName("smtp.gmail.com");
+		email.setSmtpPort(465);
+		email.setAuthenticator(new DefaultAuthenticator("gauravshakespeare@gmail.com", "shakespeare@2812%"));
+		email.setSSLOnConnect(true);
+		email.setFrom("gaurav@gmail.com");
+		email.setSubject("TestMail");
+		email.setMsg("This is a test mail ... :-)");
+		email.addTo("g.gaurav2812@bar.com");
+		email.send();
+		
+		
 		System.setProperty("webdriver.chrome.driver","C:\\Training\\Jar Files\\Drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -102,7 +109,7 @@ public class CreateWishList
 		Assert.assertEquals(ElecValue, explistname2);
 	}
 
-	
+	/*
 	@Test(dependsOnMethods = "SecondTest") // -------------------------------------------Grocery
 	public void ThirdTest() throws InterruptedException
 	{
@@ -110,7 +117,7 @@ public class CreateWishList
 		String GrocValue  = WP.AssertGroceryList();
 		Assert.assertEquals(GrocValue, explistname3);
 	}
-
+*/
 	@Test(dependsOnMethods = "ThirdTest") // ------------------------------------------------Phones
 	public void FourthTest() throws InterruptedException
 	{
@@ -119,7 +126,7 @@ public class CreateWishList
 		String PhonesVal = WP.AssertPhones();
 		Assert.assertEquals(PhonesVal, explistname4);
 	}
-
+/*
 	@Test(dependsOnMethods = "FourthTest") // ---------------------------------------------------Phones2
 	public void FifthTest() throws InterruptedException
 	{
@@ -129,6 +136,7 @@ public class CreateWishList
 		Assert.assertEquals(AssertInElec, explistname5);
 	
 	}
+	*/
 	
 	@BeforeMethod
 	public void beforeMethod()
